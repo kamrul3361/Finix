@@ -1,0 +1,350 @@
+body,a,span{
+    font-family: 'Rubik' sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto' sans-serif;
+}
+body,a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* Main Css */
+/* Header section */
+.header-section .container-fluid
+.slider-section .container-fluid{
+    max-width: 1470px;
+}
+ul.main-menu{
+    padding-bottom: 0;
+}
+ul.main-menu li a {
+    font-size: 18px;
+    padding: 10px 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #e83b3e;
+}
+.header-search {
+    width: 50px;
+    font-size: 24px;
+    margin-right: 18px;
+    border-right: 1px solid #ddd;
+}
+.header-search span{}
+.header-call-section{
+    width: 200px;
+}
+.call-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #e83b3e;
+}
+.call-icon span{}
+.header-call-text{}
+.header-call-text span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #606060;
+}
+.header-call-text a {
+    color: #111;
+    font-weight: 600;
+    font-size: 15px;
+}
+.btn-primary{
+    padding: 9px 30px;
+    font-size: 16px;
+    background: #e83b3e !important;
+    border-color: #e83b3e;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+.btn-primary::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-primary:hover{
+    border-color: #111;
+}
+.btn-primary:hover::after{
+    width: 100%;
+}
+
+/* Drop down Menu */
+ul.main-menu li{
+    position: relative;
+}
+ul.main-menu li ul{
+    position: absolute;
+    top: 155%;
+    width: 230px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.8);
+    transform: scaleY(1);
+}
+ul.main-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 120%;
+
+}
+ul.main-menu li ul li{
+    display: block;
+    flex-direction: column;
+}
+ul.main-menu li ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #e83b3e;
+    line-height: 2rem;
+}
+ul.main-menu li ul li a:hover{}
+
+/* Slider Section */
+
+.slider-section{
+    background: url(../../finix/img/main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.slider-text{}
+.slider-text h6{
+    color: #e83b3e;
+    font-size: 14px;
+    font-weight: 500;
+}
+.slider-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.slider-text p {
+    font-size: 18px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+.slider-section{
+}
+.slider-text{
+    
+}
+
+.slider-social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.slider-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.slider-social ul li{
+    padding: 0 15px;
+}
+.slider-social ul li span{
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 50px;
+    display: inline-block;
+    position: relative;
+
+}
+.slider-social ul li span::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -55px;
+    width: 40px;
+    height: 1px;
+    background: #111;
+}
+.slider-social ul li a{
+    color: #111;
+}
+
+/* Slider-image containt */
+.slider-img-tag{}
+.slider-img-tag ul{
+    list-style: none;
+}
+.slider-img-tag ul li{}
+.slider-img-tag ul li a{}
+/* About Contain */
+
+.about-img{
+    position: relative;
+}
+.about{
+    position: relative;
+}
+.about-text-contain{
+    background: url(../../finix/img/shape.png) no-repeat center center;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.about-text-inner h1{
+    color: #e83b3e;
+    font-size: 40px;
+    font-weight: 600;
+}
+.about-text-inner p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #606060;
+}
+
+.finix{}
+.finix h6{
+    color: #e83b3e;
+    font-size: 18px;
+    font-weight: 500;
+}
+.finix h1{
+    font-size: 30px;
+    margin: 18px 0;
+    font-weight: 600;
+}
+.finix p{
+    font-size: 18px;
+    opacity: .7;
+    font-weight: 400;
+}
+.finix strong {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.finix ul{
+    list-style: none;
+}
+.finix ul li{
+    margin-bottom: 10px;
+
+}
+.finix ul li::before{
+    content: \f00c;
+    font-family: 'font awesome free';
+    font-weight: 700;
+}
+
+/* Card section */
+.finix{
+    position: relative;
+}
+.animation-play{
+    position: absolute;
+    display: inline-block;
+    font-size: 60px;
+    background: #fff;
+    color: #e83b3e;
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    right: 30%;
+    bottom: 55px;
+}
+.animation-play::before{
+    content:"" ;
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #e83b3e;
+    top: 0;
+    left: 0;
+    animation: play 1.6s ease-in infinite;
+}
+@keyframes play{
+    0% ,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* card sectiom */
+.future-item{
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+.future-item::before{
+    content: "";
+    position: absolute;
+    top: -125px;
+    left: 0;
+    right: 0;
+    background: #fdebeb;
+    width: 90%;
+    height: 70%;
+    border-radius: 50%;
+    margin: auto;
+
+}
+.future-item h2{}
+.future-item p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.future-item:hover{
+    transform: translateY(-18px);
+}
+
+.future-item .ft-icon{
+    position: relative;
+    z-index: 1;
+}
+.future-item .ft-icon i{
+    color: #e83b3e;
+    font-size: 35px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .5s;
+}
+.future-item:hover .ft-icon i{
+    background: #e83b3e;
+    color: #fff;
+}
+.mtop{
+    margin-top: -23px;
+}
